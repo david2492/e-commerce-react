@@ -18,6 +18,8 @@ const Cart = () => {
       .then(res => {
         const products = res.data.data.cart.products 
         setCartProducts(products)
+          //Total de la card
+
           const total = products.reduce((acc, cv) => {
               return Number(cv.price) * cv.productsInCart.quantity + acc
           }, 0)
@@ -46,6 +48,7 @@ const Cart = () => {
       .then(res => {
         console.log(res.data)
         getAllProductsCart()
+        setTotalPrice(0)
       })
       .catch(err => console.log(err))
 

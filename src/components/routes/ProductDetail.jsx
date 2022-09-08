@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductDescription from '../productDetail/ProductDescription'
 import SimilarProducts from '../productDetail/SimilarProducts'
+import SliderImg from '../productDetail/SliderImg'
 
 const ProductDetail = () => {
 
@@ -21,6 +22,7 @@ const ProductDetail = () => {
 
   return (
     <main className='product-detail'>
+      <SliderImg/>
       <ProductDescription
         productInfo={productInfo}
       />
