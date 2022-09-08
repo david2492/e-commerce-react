@@ -18,7 +18,7 @@ const ProductDescription = ({productInfo}) => {
 
 
     const handleAddCart = () => {
-        const URL = 'hrrps://ecommerce-api-react.herokuapp.com/api/v1/cart'
+        const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/cart'
         const obj = {
           id: productInfo.id,
           quantity:counter
