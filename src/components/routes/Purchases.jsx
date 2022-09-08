@@ -19,7 +19,7 @@ const Purchases = () => {
   }, [])
 
 
-
+  
 
   return (
     <div className='purchase'>

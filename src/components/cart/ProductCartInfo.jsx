@@ -28,7 +28,7 @@ const ProductCartInfo = ({product, getAllProductsCart}) => {
       <i onClick={handleDeleteProduct} className="cart__trash fa-regular fa-trash-can"></i>
       <span className='cart__quantity'>{product.productsInCart.quantity}</span>
       <footer className='cart__item-footer'>
-        <span className='cart__total-label'>Total:</span>
+        <span className='cart__total-label'>Unit Price</span>
         <p className='cart__total-number'>{product.price}</p>
       </footer>
     </article>
